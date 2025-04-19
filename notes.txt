@@ -1,0 +1,3 @@
+start expo on iphone: pnpx expo start
+- index.jsx is the home page for the application
+- rnfs: creates react native functional component with stylesheet setup
