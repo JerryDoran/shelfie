@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@expo/vector-icons':
+    specifier: ^14.1.0
+    version: 14.1.0(expo-font@13.0.4)(react-native@0.76.9)(react@18.3.1)
   expo:
     specifier: ~52.0.46
     version: 52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9)(react-native@0.76.9)(react@18.3.1)
@@ -26,12 +29,18 @@ dependencies:
   react-native:
     specifier: 0.76.9
     version: 0.76.9(@babel/core@7.26.10)(@babel/preset-env@7.26.9)(react@18.3.1)
+  react-native-appwrite:
+    specifier: ^0.7.3
+    version: 0.7.3(expo@52.0.46)(react-native@0.76.9)
   react-native-safe-area-context:
     specifier: 4.12.0
     version: 4.12.0(react-native@0.76.9)(react@18.3.1)
   react-native-screens:
     specifier: ~4.4.0
     version: 4.4.0(react-native@0.76.9)(react@18.3.1)
+  react-native-url-polyfill:
+    specifier: ^2.0.0
+    version: 2.0.0(react-native@0.76.9)
 
 devDependencies:
   '@babel/core':
@@ -5651,6 +5660,17 @@ packages:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
     dev: false
 
+  /react-native-appwrite@0.7.3(expo@52.0.46)(react-native@0.76.9):
+    resolution: {integrity: sha512-SZaiPI6tQP04m3WNqz6s56lypcfiNL81+x28Cu6DM8/Q5wa7lMpEhBYsQFwhJtNdEGuJ3BSyYW1KFgciH1kp9g==}
+    peerDependencies:
+      expo: '*'
+      react-native: '*'
+    dependencies:
+      expo: 52.0.46(@babel/core@7.26.10)(@babel/preset-env@7.26.9)(react-native@0.76.9)(react@18.3.1)
+      expo-file-system: 18.0.12(expo@52.0.46)(react-native@0.76.9)
+      react-native: 0.76.9(@babel/core@7.26.10)(@babel/preset-env@7.26.9)(react@18.3.1)
+    dev: false
+
   /react-native-helmet-async@2.0.4(react@18.3.1):
     resolution: {integrity: sha512-m3CkXWss6B1dd6mCMleLpzDCJJGGaHOLQsUzZv8kAASJmMfmVT4d2fx375iXKTRWT25ThBfae3dECuX5cq/8hg==}
     peerDependencies:
@@ -5692,6 +5712,15 @@ packages:
       react-freeze: 1.0.4(react@18.3.1)
       react-native: 0.76.9(@babel/core@7.26.10)(@babel/preset-env@7.26.9)(react@18.3.1)
       warn-once: 0.1.1
+    dev: false
+
+  /react-native-url-polyfill@2.0.0(react-native@0.76.9):
+    resolution: {integrity: sha512-My330Do7/DvKnEvwQc0WdcBnFPploYKp9CYlefDXzIdEaA+PAhDYllkvGeEroEzvc4Kzzj2O4yVdz8v6fjRvhA==}
+    peerDependencies:
+      react-native: '*'
+    dependencies:
+      react-native: 0.76.9(@babel/core@7.26.10)(@babel/preset-env@7.26.9)(react@18.3.1)
+      whatwg-url-without-unicode: 8.0.0-3
     dev: false
 
   /react-native@0.76.9(@babel/core@7.26.10)(@babel/preset-env@7.26.9)(react@18.3.1):

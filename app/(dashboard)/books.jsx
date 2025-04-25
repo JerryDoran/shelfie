@@ -5,7 +5,7 @@ import Spacer from '../../components/spacer';
 
 export default function BooksPage() {
   return (
-    <ThemedView style={styles.container}>
+    <ThemedView style={styles.container} safe>
       <Spacer />
       <ThemedText title style={styles.heading}>
         Your Reading List
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'stretch',
-    justifyContent: 'center',
+    // justifyContent: 'center',
   },
   heading: {
     fontSize: 18,

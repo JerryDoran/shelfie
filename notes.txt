@@ -1,3 +1,13 @@
 start expo on iphone: pnpx expo start
 - index.jsx is the home page for the application
 - rnfs: creates react native functional component with stylesheet setup
+
+
+pnpx expo install react-native-appwrite react-native-url-polyfill
+
+import { Client, Account } from 'react-native-appwrite';
+
+const client = new Client()
+    .setEndpoint('https://fra.cloud.appwrite.io/v1')
+    .setProject('6803c05e003325b6e134')
+    .setPlatform('dev.maestro.shelfie');
