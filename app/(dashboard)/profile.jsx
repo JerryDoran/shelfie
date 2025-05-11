@@ -7,11 +7,11 @@ import ThemedButton from '../../components/themed-button';
 import Spacer from '../../components/spacer';
 
 export default function ProfilePage() {
-  const { logout } = useUser();
+  const { logout, user } = useUser();
   return (
     <ThemedView style={styles.container}>
       <ThemedText title style={styles.heading}>
-        Your Email
+        {user?.email}
       </ThemedText>
       <Spacer />
       <ThemedText>Time to start reading some books...</ThemedText>
